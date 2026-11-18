@@ -1,0 +1,75 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Archivos de sistema
+.DS_Store
+
+# Archivos de configuración local
+.env
+
+# Logs
+*.log
+
+# =============================================================
+# SECRETOS Y CREDENCIALES: nunca subir (contraseñas, claves API)
+# =============================================================
+
+# Variables de entorno (la plantilla .env.example sí se sube)
+.env
+.env.*
+!.env.example
+*.env
+.envrc
+
+# Claves, certificados y llaves privadas
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.ppk
+
+# Credenciales de servicios (Google, AWS, Gcloud, npm, PyPI, Docker...)
+credentials.json
+client_secret*.json
+client_secrets.json
+service-account*.json
+*-credentials.json
+token.json
+token.pickle
+.npmrc
+.pypirc
+.netrc
+.docker/config.json
+.aws/
+.gcloud/
+.config/gcloud/
+*.tfvars
+
+# Ficheros de secretos genéricos
+secrets/
+secrets.json
+secrets.yml
+secrets.yaml
+.credentials/
+
+# Configuración local de herramientas (puede llevar claves)
+.claude/settings.local.json
+.mcp.local.json
+
+# n8n: exportaciones que pueden incluir credenciales o IDs sensibles
+n8n-credentials*.json
+.n8n/
